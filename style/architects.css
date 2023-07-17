@@ -67,6 +67,43 @@ nav a{
     width: 100%;
     margin-top: 20px;
 }
+/* main section style */
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.tems {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    
+}
+.tems-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.tems-title {
+    font-size: 2.8rem;
+}
+.quick {
+    color: #727272;
+    font-weight: 500;
+}
+.of-our {
+    color: #131313;
+    font-weight: 700;
+}
+.Features {
+    color: #FF900E;
+    font-weight: 700;
+}
+.tems-details {
+    color:  #727272;
+    margin-top: 24px;
+}
+
 
 
 /* responsive meadia queries */
@@ -76,17 +113,24 @@ nav a{
     header {
         padding: 20px;
     }
-    nav {
+    nav,
+    .tems
+     {
         flex-direction: column;
-    }
     
+    }
+    .tems-img {
+        grid-template-columns: 1fr;
+    } 
+   
 }
 /* meidum device */
 @media screen and (min-width: 576px) and (max-width:960px) {
     header {
         padding: 20px;
     }
-    nav {
+    nav,
+    .tems  {
         flex-direction: column;
     }
     
