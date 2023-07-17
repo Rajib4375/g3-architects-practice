@@ -1,0 +1,93 @@
+/* work sens font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+
+}
+/* header styles */
+header {
+    background-color:  rgba(255, 144, 14, 0.10);
+   padding: 50px 240px;
+}
+.nav-title{
+    color:  #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav >ul {
+    display: flex;
+    
+}
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500px;
+    
+}
+nav a{
+    text-decoration: none;
+    color:  #424242;
+}
+/* banner style */
+.banner-contant {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.banner-title{
+    color:  #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-detels{
+    color:  #727272;
+}
+.but-pramary {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    
+}
+.banner-section img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* responsive meadia queries */
+
+/* mobole device */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    
+}
+/* meidum device */
+@media screen and (min-width: 576px) and (max-width:960px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    
+}
