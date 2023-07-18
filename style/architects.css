@@ -103,18 +103,89 @@ main{
     color:  #727272;
     margin-top: 24px;
 }
+/* facts style */
+.facts-section {
+    margin-top: 100px;
+}
+.facts-section .facts-title{
+    color:  #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.facts-section .facts-details {
+    color: #727272;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
 
+.facts-card {
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
 
+}
+.facts-card .card-stats {
+    color:  #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+
+}
+.facts-card .card-title {
+    color:#727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+    
+
+}
+/* sponspors style */
+.sponspors-section{
+    text-align: center;
+    margin-top: 100px;
+}
+.sponspors-title {
+    color:  #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.sponspors-details {
+    color:  #727272;
+    margin-top: 24px;
+}
+.sponspors-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.sponspors-img img {
+    width: 160px;
+}
 
 /* responsive meadia queries */
 
 /* mobole device */
 @media screen and (max-width: 576px) {
-    header {
+    header,
+    .facts-section
+     {
         padding: 20px;
     }
     nav,
-    .tems
+    .tems,
+    .facts-card,
+    .sponspors-img
      {
         flex-direction: column;
     
@@ -122,6 +193,11 @@ main{
     .tems-img {
         grid-template-columns: 1fr;
     } 
+    .facts-card{
+        gap: 10px;
+    }
+    
+    
    
 }
 /* meidum device */
